@@ -54,6 +54,29 @@ function App() {
               A results-oriented Diploma student in Information Technology (IT), passionate about transforming complex challenges into efficient 
               and practical technological solutions. Proficient in technical problem solving...
             </p>
+            {/* Roles */}
+<div className="flex flex-wrap gap-3 mb-8">
+  {[
+    "Developer",
+    "Data Analyst",
+    "Data Scientist",
+    "Quality Assurance",
+    "Business Analyst"
+  ].map((role, index) => (
+    <span 
+      key={index}
+      className="px-4 py-2 text-sm font-medium rounded-full 
+                 bg-zinc-900/60 border border-violet-600/40 
+                 text-violet-300 shadow-md shadow-violet-900/20 
+                 hover:bg-violet-700 hover:text-white hover:border-violet-700 
+                 transition-all duration-300 cursor-default"
+      data-aos="zoom-in" 
+      data-aos-delay={200 + index * 100}
+    >
+      {role}
+    </span>
+  ))}
+</div>
             
             {/* Tombol dengan Efek Neon/Glow */}
             <div className="flex items-center sm:gap-4 gap-2 ">
@@ -190,7 +213,7 @@ function App() {
                    className="p-5 rounded-xl shadow-2xl transition-all duration-500 border border-zinc-700/50 bg-zinc-800 
                               hover:bg-zinc-700/70 hover:border-violet-500 hover:scale-[1.02] transform" 
               data-aos={index % 2 === 0 ? "flip-left" : "flip-right"} data-aos-duration="1000" data-aos-delay={index * 200} > {/* Animasi flip bervariasi */}
-                <img src={proyek.gambar} alt="Proyek Image" className="rounded-lg w-full aspect-[16/9] object-cover mb-4 border border-zinc-700" loading="lazy"/> 
+                <img src={proyek.gambar} alt="Proyek Image" className="rounded-lg w-full object-cover mb-4 border border-zinc-700" loading="lazy"/> 
                   <div className="mt-4">
                     <h1 className="text-2xl font-bold mb-3 text-violet-300">{proyek.nama}</h1> 
                     <p className="text-base/loose mb-4 opacity-80 text-zinc-300 line-clamp-3">{proyek.desk}</p> 
