@@ -227,7 +227,7 @@ function App() {
                 data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay={index * 150} > {/* Animasi zoom-in-up */}
                   
                   {/* GAMBAR SERTIFIKAT */}
-                  <img src={sertifikat.gambar} alt={sertifikat.nama} className="rounded-lg w-full h-48 object-cover mb-4 border border-zinc-700" loading="lazy" />
+                  <img src={sertifikat.gambar} alt={sertifikat.nama} className="rounded-lg w-full object-cover mb-4 border border-zinc-700" loading="lazy" />
 
                   <div>
                     {/* Nama dan Deskripsi Sertifikat */}
