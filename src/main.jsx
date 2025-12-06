@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App.jsx";
 // KOREKSI PATH DI BAWAH INI: F dan N harus besar
 import Navbar from "./components/Navbar.jsx"; 
-import Footer from "./components/footer.jsx"; 
+import Footer from "./components/Footer.jsx"; 
 import PreLoader from "./components/PreLoader.jsx";
 import "remixicon/fonts/remixicon.css";
 import "animate.css";
